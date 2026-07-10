@@ -18,23 +18,24 @@ body {
 
 .banner-slider {
     display: flex;
-    width: 300%;
-    height: 100%;
-    animation: slide 12s infinite ease-in-out;
+    width: 400%;
+    height: auto;
+    animation: slide 24s infinite cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .banner-bg-image {
-    width: 33.333%;
+    width: 25%;
     height: auto;
     display: block;
     object-fit: contain;
 }
 
 @keyframes slide {
-    0%, 25% { transform: translateX(0);}
-    33%, 58% { transform: translateX(-33.333%);}
-    66%, 91% { transform: translateX(-66.666%);}
-    100% { transform: translateX(0);}
+    0%, 20% { transform: translateX(0);}
+    23%, 43% { transform: translateX(-25%);}
+    46%, 66% { transform: translateX(-50%);}
+    69%, 89% { transform: translateX(-75%);}
+    91%, 100% { transform: translateX(0);}
 }
 
 .navbar-overlay {
@@ -153,30 +154,39 @@ body {
 }
 
 .dot-1 {
-    animation: dotActive1 12s infinite;
+    animation: dotActive1 24s infinite;
 }
 
 .dot-2 {
-    animation: dotActive2 12s infinite;
+    animation: dotActive2 24s infinite;
 }
 
 .dot-3 {
-    animation: dotActive 12s infinite;
+    animation: dotActive3 24s infinite;
+}
+
+.dot-4 {
+    animation: dotActive4 24s infinite;
 }
 
 @keyframes dotActive1 {
-    0%, 25% { background-color: #0552fc; width: 14px; border-radius: 4px;}
-    33%, 100% { backgorund-color: rgba(225, 225, 225, 0.5); width: 6px;}
+    0%, 20%, 92%, 100% { background-color: #0552fc; width: 14px; border-radius: 4px;}
+    23%, 89% { backgorund-color: rgba(225, 225, 225, 0.5); width: 6px;}
 }
 
 @keyframes dotActive2 {
-    0%, 25%, 66%, 100% { background-color: rgba(255, 255, 255, 0.5); width: 6px;}
-    33%, 58% { background-color: #0552fc; width: 14px; border-radius: 4px;} 
+    0%, 20%, 46%, 100% { background-color: rgba(255, 255, 255, 0.5); width: 6px;}
+    23%, 43% { background-color: #0552fc; width: 14px; border-radius: 4px;} 
 }
 
 @keyframes dotActive3 {
-    0%, 58%, 100% { background-color: rgba(255, 255, 255, 0.5); width: 6px;}
-    66%, 91% { background-color: #0552fc; width: 14px; border-radius: 4px;}
+    0%, 43%, 69%, 100% { background-color: rgba(255, 255, 255, 0.5); width: 6px;}
+    46%, 66% { background-color: #0552fc; width: 14px; border-radius: 4px;}
+}
+
+@keyframes dotActive4 {
+    0%, 66%, 92% { background-color: rgba( 255, 255, 255, 0.5); width: 6px;}
+    69%, 89% { background-color: #0552fc; width: 14px; border-radius: 4px;}
 }
 
 @media (min-width: 480px) {
