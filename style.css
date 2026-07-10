@@ -13,12 +13,28 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
+    background-color: #e1f5cc;
+}
+
+.banner-slider {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 12s infinite ease-in-out;
 }
 
 .banner-bg-image {
-    width: 100%;
+    width: 33.333%;
     height: auto;
     display: block;
+    object-fit: contain;
+}
+
+@keyframes slide {
+    0%, 25% { transform: translateX(0);}
+    33%, 58% { transform: translateX(-33.333%);}
+    66%, 91% { transform: translateX(-66.666%);}
+    100% { transform: translateX(0);}
 }
 
 .navbar-overlay {
@@ -133,12 +149,34 @@ body {
     height: 6px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 50%;
+    transition: all 0.3s;
 }
 
-.dot.active {
-    background-color: #0552fc;
-    width: 14px;
-    border-radius: 4px;
+.dot-1 {
+    animation: dotActive1 12s infinite;
+}
+
+.dot-2 {
+    animation: dotActive2 12s infinite;
+}
+
+.dot-3 {
+    animation: dotActive 12s infinite;
+}
+
+@keyframes dotActive1 {
+    0%, 25% { background-color: #0552fc; width: 14px; border-radius: 4px;}
+    33%, 100% { backgorund-color: rgba(225, 225, 225, 0.5); width: 6px;}
+}
+
+@keyframes dotActive2 {
+    0%, 25%, 66%, 100% { background-color: rgba(255, 255, 255, 0.5); width: 6px;}
+    33%, 58% { background-color: #0552fc; width: 14px; border-radius: 4px;} 
+}
+
+@keyframes dotActive3 {
+    0%, 58%, 100% { background-color: rgba(255, 255, 255, 0.5); width: 6px;}
+    66%, 91% { background-color: #0552fc; width: 14px; border-radius: 4px;}
 }
 
 @media (min-width: 480px) {
