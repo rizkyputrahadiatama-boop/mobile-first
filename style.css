@@ -189,6 +189,39 @@ body {
     69%, 89% { background-color: #0552fc; width: 14px; border-radius: 4px;}
 }
 
+.promo-container {
+    padding: 16px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.promo-card {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba( 0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.promo-card:active {
+    transform: scale(0.96);
+}
+
+.promo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 @media (min-width: 480px) {
     .hero-banner-container {
         max-width: 450px;
