@@ -7,7 +7,7 @@
 
 body {
     background-color: #ffffff;
-    padding-bottom: 0px;
+    padding-bottom: 85px;
 }
 
 .banner-section {
@@ -270,14 +270,14 @@ body {
        top: auto !important;
        transform: none !important;
        width: 100% !important;
-       height: 64px;
+       height: 60px;
        background-color: #ffffff;
        border-top: none !important;
        justify-content: space-around;
        align-items: center;
        box-shadow: 0 -10px 30px rgba( 0, 0, 0, 0.02);
-       margin-top: 40px;
-       padding-bottom: 12px;
+       margin-top: 4px;
+       padding-bottom: 4px;
     }
     .nav-item {
         display: flex;
@@ -291,8 +291,8 @@ body {
         -webkit-tap-highlight-color: transparent;
     }
     .nav-icon {
-    font-size: 20px;
-    margin-bottom: 4px;
+    font-size: 18px;
+    margin-bottom: 2px;
     }
     .nav-label {
     font-size: 10px;
