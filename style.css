@@ -5,9 +5,23 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    -user-select: none;
+}
+
 body {
     background-color: #ffffff;
     padding-bottom: 85px;
+}
+
+.main-page {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 
 .banner-section {
@@ -255,6 +269,50 @@ body {
     object-fit: cover;
 }
 
+.cart-page-single {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f8fafc;
+}
+
+.cart-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 56px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.05);
+}
+
+.btn-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #1e293b;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.cart-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+.header-spacer {
+    width: 40px;
+}
+
 @media (min-width: 480px) {
     .hero-banner-container {
         max-width: 450px;
@@ -319,5 +377,13 @@ body {
     min-width: 11px;
     text-align: center;
     border: 2px solid #ffffff;
+    }
+
+    .cart-page-single {
+        max-width: 768px;
+        margin: 0 auto;
+        border-left: 1px solid #e2e8f0;
+        border-right: 1px solid #e2e8f0;
+        box-shadow: 0 4px 12px rgba( 0, 0, 0, 0.05);
     }
 }
