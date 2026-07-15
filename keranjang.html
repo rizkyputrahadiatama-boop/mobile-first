@@ -3,11 +3,11 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1,0">
         <title>Keranjang Belanja</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="keranjang.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
-        <div class="cart-page-single">
+        <div class="cart-mobile-container">
             <header class="cart-header">
                 <a href="index.html" class="btn-back">
                     <i class="fa-solid fa-arrow-left"></i>
@@ -15,8 +15,33 @@
                 <h1 class="cart-title">Keranjang Belanja</h1>
                 <div class="header-spacer"></div>
             </header>
-            <main class="cart-content">
-                <p style="text-align: center; margin-top: 40px; color: #64748b;">Keranjang Belnja Anda Kosong.</p>
+            <main class="cart-content-grid">
+                <div class="cart-item-card-grid">
+                    <div class="img-container">
+                        <img src="public/hairdyer1.jpg" alt="product1" class="item-img-grid">
+                        <a href="#" class="btn-delete-grid">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                    </div>
+                    <div class="item-details-grid">
+                        <h3 class="item-name-grid">Remington Hairdyer</h3>
+                        <p class="item-name-grid">1pcs</p>
+                        <p class="item-price-grid">Rp420.000</p>
+                    </div>
+                </div>
+                <div class="cart-item-card-container">
+                    <div class="img-container">
+                        <img src="public/catokan.jpg" alt="product2" class="item-img-grid">
+                        <a href="#" class="btn-delete-grid">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                    </div>
+                    <div class="item-details-grid">
+                        <h3 class="item-name-grid">Catokan</h3>
+                        <p class="item-qty-grid">1pcs</p>
+                        <p class="item-price-grid">200.000</p>
+                    </div>
+                </div>
             </main>
         </div>
     </body>
