@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>checkout-pembayaran</title>
+        <link rel="stylesheet" href="checkout.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="checkout-mobile-container">
+            <header class="checkout-header">
+                <a href="keranjang.html" class="btn-back">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <h1 class="checkout-title">Pembayaran</h1>
+                <div class="header-spacer"></div>
+            </header>
+            <main class="checkout-content">
+                <section class="checkout-section shadow-sm">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <i class="fa-solid fa-truck-ramp-box"></i>
+                        </h2>
+                    </div>
+                    <div class="info-profile-box">
+                        <div class="profile-meta">
+                            <span class="badge-role role-sender">Pengirim</span>
+                            <h3 class="profile-name">AstroShop</h3>
+                        </div>
+                        <p class="profile-phone"><i class="fa-solid fa-phone-flip"></i>0856-9405-1711</p>
+                        <p class="profile-address">JL. Raya Puncak No.12, Ciawi, Bogor, Jawa Barat.</p>
+                    </div>
+                </section>
+                <section class="checkout-section shadow-sm">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <i class="fa-solid fa-user-location"></i>
+                        </h2>
+                    </div>
+                    <div class="info-profile-box">
+                        <div class="profile-meta">
+                            <span class="badge-role role-receiver">Penerima</span>
+                            <h3 class="profile-name">Ramlan Spakbor</h3>
+                        </div>
+                        <p class="profile-phone"><i class="fa-solid fa-phone-flip"></i>0838-7714-3565</p>
+                        <p class="profile-address">Kp.Cibedug Rt 02/Rw 03, Kec.Ciawi, Kab.Bogor, Jawa Barat </p>
+                    </div>
+                </section>
+                <section class="checkout-section shadow-sm">
+                    <div class="section-header">
+                        <h2 class="section-title"><i class="fa-solid fa-credit-card"></i>Metode Pembayaran</h2>
+                    </div>
+                    <div class="payment-options">
+                        <label class="payment-card">
+                            <input type="radio" name="payment method" checked>
+                            <span class="custom-radio"></span>
+                            <span class="payment-name">Dana/ Gopay</span>
+                        </label>
+                        <label class="payment-card">
+                            <input type="radio" name="payment method" checked>
+                            <span class="custom-radio"></span>
+                            <span class="payment-name">Transfer Bank (Virtual Account)</span>
+                        </label>
+                        <label class="payment-card">
+                            <input type="radio" name="payment method">
+                            <span class="custom-radio"></span>
+                            <span class="payment-name">Bayar Di Tempat (COD)</span>
+                        </label>
+                    </div>
+                </section>
+                <section class="checkout-section shadow-sm">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <i class="fa-solid fa-truck-fast"></i> Opsi Pengiriman
+                        </h2>
+                    </div>
+                    <div class="payment-options">
+                        <label class="payment-card">
+                            <input type="radio" name="shipping_method" checked>
+                            <span class="custom-radio"></span>
+                            <div class="shipping-details">
+                                <span class="payment-name">JNE Regular</span>
+                                <span class="shipping-desc">Estimasi tiba 18 - 20 Jul</span>
+                            </div>
+                            <span class="shipping-price">Rp15.000</span>
+                        </label>
+                        <label class="payment-card">
+                            <input type="radio" name="shipping_method">
+                            <span class="custom-radio"></span>
+                            <div class="shipping-details">
+                                <span class="payment-name">JNT Express</span>
+                                <span class="shipping-desc">Estimasi tiba 19 - 21 Jul</span>
+                            </div>
+                            <span class="shipping-price">Rp15.000</span>
+                        </label>
+                    </div>
+                </section>
+            </main>
+            <div class="checkout-summary-section">
+                <div class="summary-row">
+                    <span class="summary-label">Total Belanja</span>
+                    <span class="summary-value">Rp600.000</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Biaya Ongkir</span>
+                    <span class="summary-value">Rp15.000</span>
+                </div>
+                <hr class="summary-divider">
+                <div class="total-pay-row">
+                    <div class="total-price-block">
+                        <span class="total-label">Total Pembayaran</span>
+                        <span class="total-amount">Rp615.000</span>
+                    </div>
+                    <button class="btn-checkout-primary">Buat Pesanan<i class="fa-solid fa-arrow-right icon-next"></i></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
