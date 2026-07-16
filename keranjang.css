@@ -191,3 +191,88 @@ body {
     min-width: 20px !important;
     text-align: center !important;
 }
+
+.cart-summary-section {
+    margin-top: auto;
+    background-color: #ffffff !important;
+    border-top: 1px solid #f1f5f9 !important;
+    padding: 16px !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    position: sticky !important;
+    bottom: 0 !important;
+    z-index: 20 !important;
+    box-shadow: 0 -4px 16px rgba( 0, 0, 0, 0.04) !important;
+}
+
+.summary-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 8px !important;
+}
+
+.summary-label {
+    font-size: 13px !important;
+    color: #64748b !important;
+}
+
+.summary-value {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #1e293b !important;
+}
+
+.discount-value {
+    color: #10b981 !important;
+}
+
+.summary-divider {
+    border: 0 !important;
+    border-top: 1px dashed #e2e8f0 !important;
+    margin: 12px 0 !important;
+}
+
+.total-checkout-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 16px !important;
+}
+
+.total-price-block {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2px !important;
+}
+
+.total-label {
+    font-size: 11px !important;
+    color: #94a3b8 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.total-amount {
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    color: #1e293b !important;
+}
+
+.btn-checkout {
+    flex: 1 !important;
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    height: 44px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s, transform 0.1s !important;
+}
+
+.btn-checkout:active {
+    background-color: #0f172a !important;
+    transform: scale(0.98) !important;
+}
