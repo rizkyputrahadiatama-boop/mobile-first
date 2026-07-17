@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <title>Keranjang Belanja</title>
+        <link rel="stylesheet" href="keranjang.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="cart-mobile-container">
+            <header class="cart-header">
+                <a href="index.html" class="btn-back">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <h1 class="cart-title">Keranjang Belanja</h1>
+                <div class="header-spacer"></div>
+            </header>
+            <main class="cart-content-grid">
+                <div class="cart-item-card-grid">
+                    <div class="img-container">
+                        <img src="public/hairdyer1.jpg" alt="product1" class="item-img-grid">
+                        <a href="#" class="btn-delete-grid">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                    </div>
+                    <div class="item-details-grid">
+                        <h3 class="item-name-grid">Remington Hairdyer</h3>
+                        <p class="item-price-grid">Rp420.000</p>
+                        <div class="quantity-counter">
+                            <button class="btn-counter minus">-</button>
+                            <span class="qty-number">1</span>
+                            <button class="btn-counter plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item-card-container">
+                    <div class="img-container">
+                        <img src="public/catokan.jpg" alt="product2" class="item-img-grid">
+                        <a href="#" class="btn-delete-grid">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                    </div>
+                    <div class="item-details-grid">
+                        <h3 class="item-name-grid">Catokan</h3>
+                        <p class="item-price-grid">200.000</p>
+                        <div class="quantity-counter">
+                            <button class="btn-counter minus">-</button>
+                            <span class="qty-number">1</span>
+                            <button class="btn-counter plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+                <div class="cart-summary-section">
+                    <div class="summary-row">
+                        <span class="summary-label">Subtotal</span>
+                        <span class="summary-value" id="summary-subtotal">Rp620.000</span>
+                    </div>
+                    <div class="summary-row promo-row">
+                        <span class="summary-label">Diskon/voucher</span>
+                        <span class="summary-value discount-value" id="summary-discount">-Rp20.000</span>
+                    </div>
+                    <hr class="summary-divider">
+                    <div class="total-checkout-row">
+                        <div class="total-price-block">
+                            <span class="total-label">Total Biaya</span>
+                            <span class="total-amount" id="summary-total">Rp600.000</span>
+                        </div>
+                        <a href="checkout.html" class="btn-checkout" style="text-decoration: none; display: flex; align-items: center; justify-content: center;">Checkout</a>
+                    </div>
+                </div>
+            
+        </div>
+    </body>
+</html>
