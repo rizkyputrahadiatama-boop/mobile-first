@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transaksi</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="riwayat.css">
+    </head>
+    <body>
+        <div class="transaction-mobile-container">
+            <header class="transaction-header">
+                <a href="index.html" class="back-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </header>
+            <div class="transaction-filter-container">
+                <div class="filter-tabs">
+                    <button class="tab-btn active" data-status="all">Semua</button>
+                    <button class="tab-btn" data-status="process">Diproses</button>
+                    <button class="tab-btn" data-status="shipping">Dikirim</button>
+                    <button class="tab-btn" data-status="success">Selesai</button>
+                    <button class="tab-btn" data-status="canceled">Batal</button>
+                </div>
+            </div>
+            <main class="transaction-list">
+                <div class="transaction-card" data-card-status="process">
+                    <div class="card-header">
+                        <span class="tx-date">18 Jul 2026</span>
+                        <span class="status-badge badge-process">Diproses</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="product-info">
+                            <div class="product-details">
+                                <h3 class="product-name">Remington Hairdyer</h3>
+                                <p class="product-qty">1 barang x Rp420.000</p>
+                            </div>
+                        </div>
+                        <p class="extra-products">Ongkir Rp15.000</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="total-payment">
+                            <span>Total Belanja</span>
+                            <strong>Rp435.000</strong>
+                        </div>
+                        <button class="btn-action btn-secondary">Hubungi Penjual</button>
+                    </div>
+                </div> 
+                <div class="transaction-card" data-card-status="shipping">
+                    <div class="card-header">
+                        <span class="tx-date">19 Jul 2026</span>
+                        <span class="status-badge badge-shipping">Dikirim</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="product-info">
+                            <div class="product-details">
+                                <h3 class="product-name">Remington Hairdyer</h3>
+                                <p class="product-qty">1 barang x Rp420.000</p>
+                            </div>
+                            <p class="extra-products">Ongkir Rp15.000</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="total-payment">
+                            <span>Total Belanja</span>
+                            <strong>Rp435.0000</strong>
+                        </div>
+                        <button class="btn-action btn-primary">Lacak Paket</button>
+                    </div>
+                </div>
+                <div class="transaction-card" data-card-status="success">
+                    <div class="card-header">
+                        <span class="tx-date">20 Jul 2026</span>
+                        <span class="status-badge badge-success">Selesai</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="product-info">
+                            <div class="product-details">
+                                <h3 class="product-name">Remington Hairdyer</h3>
+                                <p class="product-qty">1 barang x Rp420.000</p>
+                            </div>
+                            <p class="extra-products">Ongkir Rp15.000</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="total-payment">
+                            <span>Total</span>
+                            <strong>Rp435.000</strong>
+                        </div>
+                        <div class="footer-buttons">
+                            <button class="btn-action btn-secondary">Beri Ulasan</button>
+                            <button class="btn-action btn-primary">Beli Lagi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="transaction-card" data-card-status="canceled">
+                    <div class="card-header">
+                        <span class="tx-date">17 Jul 2026</span>
+                        <span class="status-badge badge-canceled">Dibatalkan</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="product-info">
+                            <div class="product-details">
+                                <h3 class="product-name">Remington Hairdyer</h3>
+                                <p class="product-qty">1 barang x Rp435.000</p>
+                            </div>
+                            <p class="extra-products">Ongkir Rp15.000</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="total-payment">
+                            <span>Total Belanja</span>
+                            <strong>Rp435.000</strong>
+                        </div>
+                        <button class="btn-action btn-secondary">Detail Pembatalan</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
