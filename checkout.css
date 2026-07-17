@@ -328,3 +328,118 @@ body {
     color: #1e293b !important;
     margin-left: 12px !important;
 }
+
+.modal-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba( 15, 23, 42, 0.6) !important;
+    backdrop-filter: blur( 4px) !important;
+    z-index: 999 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.modal-card {
+    background-color: #ffffff !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    box-shadow: 0 10px 25px rgba( 0, 0, 0, 0.1) !important;
+    transform: scale( 0.8) !important;
+    transition: transform 0.3s cubic-bezier( 0.34, 1.56, 0.64, 1) !important;
+}
+
+.modal-overlay:target {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.modal-overlay:target .modal-card {
+    transform: scale( 1) !important;
+}
+
+.modal-title {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+    margin-bottom: 8px !important;
+}
+
+.modal-message {
+    font-size: 13px !important;
+    color: #64748b !important;
+    line-height: 1.5 !important;
+    margin-bottom: 20px !important;
+}
+
+.modal-tx-details {
+    background-color: #f8fafc !important;
+    border: 1px solid #f1f5f9 !important;
+    border-radius: 12px !important;
+    padding: 12px 16px !important;
+    margin-bottom: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+}
+
+.tx-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    font-size: 12px !important;
+    color: #64748b !important;
+}
+
+.tx-value {
+    font-weight: 600 !important;
+    color: #1e293b !important;
+}
+
+.limit-price {
+    color: #10b981 !important;
+}
+
+.modal-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+}
+
+.btn-modal {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 44px !important;
+    border-radius: 10px !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important; 
+}
+
+.btn-primary-modal {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+}
+
+.btn-primary-modal:active {
+    background-color: #0f172a !important;
+    transform: scale( 0.97) !important;
+}
+
+@keyframes scaleUp {
+    0% { transform: scale(0); opacity: 0;}
+    100% { transform: scale(1); opacity: 1;}
+}

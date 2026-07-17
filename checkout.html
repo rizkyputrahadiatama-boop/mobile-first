@@ -112,7 +112,29 @@
                         <span class="total-label">Total Pembayaran</span>
                         <span class="total-amount">Rp615.000</span>
                     </div>
-                    <button class="btn-checkout-primary">Buat Pesanan<i class="fa-solid fa-arrow-right icon-next"></i></button>
+                    <a href="#payment-success-modal" class="btn-checkout-primary">Bayar Sekarang <i class="fa-solid fa-arrow-right icon-next"></i></a>
+                </div>
+                <div id="payment-success-modal" class="modal-overlay">
+                    <div class="modal-card">
+                        <div class="success-icon-wrapper">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <h2 class="modal-title">Pesanan Berhasil!</h2>
+                        <p class="modal-message">Terima Kasih! Pesanan Anda Telah Kami Terima Dan Sedang Diproses Oleh Penjual</p>
+                        <div class="modal-tx-details">
+                            <div class="tx-row">
+                                <span>Metode</span>
+                                <span class="tx-value">COD</span>
+                            </div>
+                            <div class="tx-row">
+                                <span>Total Bayar</span>
+                                <span class="tx-value limit-price">Rp615.000</span>
+                            </div>
+                        </div>
+                        <div class="modal-actions">
+                            <a href="index.html" class="btn-modal btn-primary-modal">Kembali Ke Beranda</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
