@@ -1,21 +1,15 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <title>Astro Banner</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="hero-banner-container">
-        <div class="banner-slider">
-            <img src="public/banner5.jpg" alt="banner 1" class="banner-bg-image">
-            <img src="public/banner4.jpg" alt="banner 2" class="banner-bg-image">
-            <img src="public/banner8.jpg" allt="banner 3" class="banner-bg-image">
-            <img src="public/bannerlagi.jpg" alt="banner 4" class="banner-bg-image">
-        </div>
-            <div class="navbar-overlay">
+        <div class="main-page">
+            <div class="header-section">
                 <div class="top-bar">
                     <div class="eta-info">
                         <span class="label-tiba">Tiba Dalam</span>
@@ -24,79 +18,86 @@
                     </div>
                     <div class="top-buttons">
                         <button class="btn-chat">
-                            <i class="fa-solid fa-headset">Chat CS</i>
+                            <i class="fa-solid fa-headset icon-cs">Chat CS</i>
                         </button>
                         <button class="btn-menu">
                             <i class="fa-solid fa-bars"></i>
                         </button>
                     </div>
-            </div>
-            <div class="search-box">
-                <i class="fa-solid fa magnifying-glass search-icon"></i>
-                <input type="text" placeholder="Cari Produk Disini">
-            </div>
-
-        <div class="carousel-dots">
-            <span class="dot dot-1"></span>
-            <span class="dot dot-2"></span>
-            <span class="dot dot-3"></span>
-            <span class="dot dot-4"></span>
-        </div>
-     </div>
-        
-
-        <main class="promo-container">
-            <div class="section-header">
-                <h2 class="section-title">FASTI butuh ini</h2>
-            </div>
-            <div class="promo-grid">
-                <a href="#" class="promo-card">
-                    <img src="public/card1.jpg" alt="protein tambahan" class= "promo-img">
-                </a>
-                <a href="#" class="promo-card">
-                    <img src="public/card2.jpg" alt="imon on terus" class="promo-img">
-                </a>
-                <a href="produk.html" class="promo-card">
-                    <img src="public/card3.jpg" alt="nyaman di setiap sudut" class="promo-img">
-                </a>
-                <a href="#" class="promo-card">
-                    <img src="public/card4.jpg" alt="menu praktis" class="promo-img">
-                </a>
-                <a href="#" class="promo-card">
-                    <img src="public/card5.jpg" alt="masak praktis" class="promo-img">
-                </a>
-                <a href="#" class="promo-card">
-                    <img src="public/card6.png" alt="your-own-cafe" class="promo-img">
-                </a>
-                <a href="#" class="promo-card">
-                    <img src="public/card7.jpg" alt="kombo hemat" class="promo-img">
-                </a>
-                <a href="#" class="promo-card">
-                    <img src="public/card8.jpg" alt="penyelamat stok rumah" class="promo-img">
-                </a>
-            </div>
-        </main>
-
-        <nav class="bottom-nav">
-            <a href="#" class="nav-item active">
-                <i class="fa-solid fa-house nav-icon"></i>
-                <span class="nav-label">Home</span>
-            </a>
-            <a href="keranjang.html" class="nav-item">
-                <div class="icon-wrapper">
-                    <i class="fa-solid fa-basket-shopping nav-icon"></i>
-                    <span class="nav-badge"></span>
                 </div>
-                <span class="nav-label">Keranjang</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fa-solid fa-receipt nav-icon"></i>
-                <span class="nav-label">Tranksaksi</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fa-solid fa-user nav-icon"></i>
-                <span class="nav-label">Akun</span>
-            </a>
-        </nav>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" placeholder="Cari Produk Disini">
+                </div>
+            </div>
+            <div class="banner-section">
+                <div class="hero-banner-container">
+                    <div class="banner-slider">
+                        <img src="public/banner5.jpg" alt="banner1" class="banner-bg-image">
+                        <img src="public/banner4.jpg" alt="banner2" class="banner-bg-image">
+                        <img src="public/banner8.jpg" alt="banner3" class="banner-bg-image">
+                        <img src="public/bannerlagi.jpg" alt="banner4" class="banner-bg-image">
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot dot-1"></span>
+                        <span class="dot dot-2"></span>
+                        <span class="dot dot-3"></span>
+                        <span class="dot dot-4"></span>
+                    </div>
+                </div>
+            </div>
+            <main class="promo-container">
+                <div class="section-header">
+                    <h2 class="section-title">FASTI butuh ini</h2>
+                </div>
+                <div class="promo-grid">
+                    <a href="nobar.html" class="promo-card">
+                        <img src="public/masak.jpg" alt="nobar" class="promo-img">
+                    </a>
+                    <a href="imun.html" class="promo-card">
+                        <img src="public/card2.jpg" alt="imun" class="promo-img">
+                    </a>
+                    <a href="produk.html" class="promo-card">
+                        <img src="public/card3.jpg" alt="nyaman" class="promo-card">
+                    </a>
+                    <a href="sweet.html" class="promo-card">
+                        <img src="public/sweet.png" alt="sweet and break" class="promo-card">
+                    </a>
+                    <a href="gizi.html" class="promo-card">
+                        <img src="public/gizi.jpg" alt="gizi" class="promo-img">
+                    </a>
+                    <a href="rice.html" class="promo-card">
+                        <img src="public/rice.jpg" alt="rice" class="promo-img">
+                    </a>
+                    <a href="kitwajibnobar.html" class="promo-card">
+                        <img src="public/kitwajib.jpg" class="promo-card">
+                    </a>
+                    <a href="combohemat.html" class="promo-card">
+                        <img src="public/card8.jpg" alt="pemyelamat stok rumah" class="promo-card">
+                    </a>
+                </div>
+            </main>
+            <nav class="bottom-nav">
+                <a href="#" class="nav-item active">
+                    <i class="fa-solid fa-house nav-icon"></i>
+                    <span class="nav-label">Home</span>
+                </a>
+                <a href="keranjang.html" class="nav-item">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-basket-shopping nav-icon"></i>
+                        <span class="nav-badge"></span>
+                    </div>
+                    <span class="nav-label">Keranjang</span>
+                </a>
+                <a href="riwayat.html" class="nav-item">
+                    <i class="fa-solid fa-receipt nav-icon"></i>
+                    <span class="nav-label">Transaksi</span>
+                </a>
+                <a href="profile.html" class="nav-item">
+                    <i class="fa-solid fa-user nav-icon"></i>
+                    <span class="nav-label">Akun</span>
+                </a>
+            </nav>
+        </div>
     </body>
 </html>
