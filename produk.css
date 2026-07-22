@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.product-page {
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 24px rgba( 0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+.product-header {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-bottom: 1px solid #f1f5f9;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 10;
+}
+
+.btn-back {
+    font-size: 16px;
+    color: #1e293b;
+    text-decoration: none;
+    width: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.categroy-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.cart-icon-wrapper {
+    position: relative !important;
+    font-size: 18px;
+    color: #1e293b;
+    cursor: pointer;
+    width: 32px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cart-badge {
+    position: absolute !important;
+    top: -6px !important;
+    right: -6px !important;
+    background-color: #ef4444 !important;
+    color: white !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
+    padding: 2px 6px !important;
+    border-radius: 10px !important;
+    line-height: 1 !important;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.category-banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.category-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sub-category-section {
+    padding: 0 0 16px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.product-scroll-row {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 12px !important;
+    overflow-x: auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding-bottom: 12px !important;
+    padding-right: 14px !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+.product-scroll-row::-webkit-scrollbar {
+    display: none !important;
+}
+
+.product-card-horizontal {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 0 0 150px !important;
+    width: 150px !important;
+    background-color: #ffffff !important;
+    border: 1px solid #f1f5f9 !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+.card-img-wrapper {
+    position: relative !important;
+    width: 100% !important;
+    aspect-ratio: 1 / 1 !important;
+    background-color: #f8fafc !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box;
+}
+
+.card-img-wrapper img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    padding: 12px !important;
+    box-sizing: border-box;
+}
+
+.btn-add-badge {
+    position: absolute !important;
+    bottom: 8px !important;
+    right: 8px !important;
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+    width: 26px !important;
+    height: 26px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    border: none !important;
+    box-shadow: 0 2px 6px rgba( 0, 0, 0, 0.15);
+    z-index: 5;
+}
+
+.card-info {
+    padding: 8px 10px 10px 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1px !important;
+    box-sizing: border-box;
+}
+
+.price {
+    font-size: 13px !important;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+}
+
+.name {
+    font-size: 12px !important;
+    font-weight: 500;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    overflow: hidden;
+    min-height: 32px;
+}
+
+.qty-info {
+    font-size: 10px !important;
+    color: #94a3b8;
+    margin-top: 2px;
+}
